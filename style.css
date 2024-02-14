@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --black: #1B1722;
+    --white: #F0F0F0;
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+* {
+    font-family: 'Quicksand', 'sans-serif','cursive';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+    border-radius: 5rem;
+}
+
+.header {
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(245, 205, 211);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.4rem 7%;
+    z-index: 999;
+}
+
+.header .logoContent {
+    display: flex;
+    align-items: center;
+}
+
+.header .logoContent .logo img {
+    height: 4rem;
+}
+
+.header .logoContent .logoName {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    margin-right: 3rem;
+    color: rgb(78, 34, 42);
+    font-weight: bold;
+}
+
+.header .navbar a:hover {
+    border-bottom: .1rem solid rgb(75, 27, 35);
+    padding-bottom: .4rem;
+}
+
+.header .icon i {
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .search {
+    display: none;
+    top: 100%;
+    margin: 1.5rem 7%;
+    background-color: transparent;
+    width: 50%;
+    right: 0;
+    height: 5rem;
+    position: absolute;
+
+}
+
+.header .search input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: var(--white);
+    color: var(--black);
+    margin-right: 7%;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.header .search.active {
+    display: inline-block;
+}
+
+#menu-bar {
+    display: none;
+}
+
+
+
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(back.jpg.webp) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .homeContent {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem;
+
+}
+
+.home .homeContent h2 {
+    font-size: 7rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    line-height: 7rem;
+    color: var(--black);
+    text-shadow: var(--box-shadow);
+}
+
+.home .homeContent .home-btn {
+    height: 3rem;
+    padding-top: 20px;
+}
+
+.home .homeContent .home-btn button {
+    font-size: 1.8rem;
+    background-color: rgb(85, 29, 38);
+    color: var(--white);
+    border-radius: .7rem;
+    padding: .7rem 2.4rem;
+    cursor: pointer;
+}
+
+.home .homeContent .home-btn button:hover {
+    font-size: 2rem;
+}
+
+
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-image: url(all.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 89vh;
+
+}
+
+.about-content .btn{
+    text-decoration: underline;
+    font-style: bold;
+}
+
+.about-img img {
+    width: 38vw;
+    border-radius: 5%;
+    margin-left: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.about-content h2 {
+    text-align: center;
+    line-height: 1.2;
+    font-family: 'sans-serif';
+    color: #6b1d30;
+    text-shadow: 0px 5px 5px rgba(121, 34, 56, 0.61);
+    ;
+}
+
+
+
+.about-content p {
+    font-size: 2.5rem;
+    margin: 2rem 0 3rem;
+    font-weight: 400;
+    font-family: 'cursive';
+}
+
+.btn {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+/* 
+<!------------------gallery----------------> */
+
+
+.gallery-content{
+    background-image: url(all.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: auto;
+}
+ .gallery-content h2{
+    font-size: 50px;
+    text-align: center;
+    color: #6b1d30;
+    font-style: bold;
+    padding-top: 25px;
+    font-family: 'sans-serif';
+    text-shadow: 0px 5px 5px rgba(121, 34, 56, 0.61);
+ }
+.gallery {
+    margin: 5px;
+    float: left;
+    width: 380px;
+    padding-top: 40px;
+}
+
+.gallery img {
+    width: 300px;
+    height: 230px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: 0.5s;
+}
+.gallery img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+footer{
+    background: #fbfbfc;
+    height: auto;
+    width: 100vw;
+    font-family: 'sans-serif';
+    padding-top: 20px;
+    color: #521829;
+    margin-top: 100px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 4rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-family: 'sans-serif';
+    text-decoration: underline;
+    cursor: pointer;
+       
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.socials li{
+   margin: 0 10px;
+}
+
+.socials i{
+    font-size: 3rem;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border-radius: 30%;
+    
+}
+
+.socials i:hover{
+    background: lightpink;
+}
+
+.footer-bottom{
+    background: white;
+    width: 100vw;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 20px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.credit{
+    background: white;
+    width: 100vw;
+    padding: 15px ;
+    text-align: center;   
+}
+
+.credit p{
+    font-size: 20px;
+    word-spacing: 2px;
+    text-transform: capitalize; 
+    font-weight: 400; 
+}
+
+
